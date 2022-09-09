@@ -19,15 +19,6 @@ def index():
 connection = MySQLdb.connect(host="localhost", user="root", passwd="admin", db="inventory")
 
 
-'''
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'admin'
-app.config['MYSQL_DB'] = 'inventory'
-
-mysql = MySQL(app)
-'''
-
 
 @app.route('/login', methods=['GET','POST'])
 def login():
