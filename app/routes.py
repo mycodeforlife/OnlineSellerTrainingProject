@@ -47,6 +47,7 @@ def register():
         try:
             print("running query insert")
             insert_query_result = cursor.execute(insert_query)
+            connection.commit()
             print(insert_query_result)
             #return redirect('register')
         except:
